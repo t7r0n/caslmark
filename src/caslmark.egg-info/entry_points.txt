@@ -1,0 +1,2 @@
+[console_scripts]
+caslmark = caslmark.cli:main

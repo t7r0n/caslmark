@@ -1,0 +1,18 @@
+{
+  "company": "Jerry",
+  "repo": "caslmark",
+  "metrics": [
+    "jerry_coverage",
+    "hardest_risk",
+    "unsolved_precision",
+    "problem_latency"
+  ],
+  "failure_modes": [
+    "jerry_drift",
+    "hardest_gap",
+    "unsolved_misroute",
+    "problem_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}
