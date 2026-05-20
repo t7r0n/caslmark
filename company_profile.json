@@ -40,6 +40,28 @@
     "unsolved_misroute",
     "problem_blindspot"
   ],
+  "archetypes": [
+    {
+      "name": "jerry evidence replay",
+      "trigger": "jerry signal changes while hardest context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "hardest boundary probe",
+      "trigger": "hardest handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "unsolved regression harness",
+      "trigger": "unsolved behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "problem operator packet",
+      "trigger": "problem output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
   "sources": [
     "https://techstartups.com/2023/08/03/personal-insurance-shopper-startup-jerry-raises-110m-in-series-c2-funding-doubles-its-ai-powered-allcar-app-services/",
     "https://www.prnewswire.com/news-releases/jerry-launches-revamped-website-to-help-drivers-make-smarter-insurance-and-auto-decisions-302452453.html",

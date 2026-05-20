@@ -1,7 +1,5 @@
 scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
-hardest gap,24,3,2,3.333,0.536,ev_0077,block release until replay is understood
-hardest reviewer handoff,24,2,4,2.583,0.4145,ev_0121,block release until replay is understood
-jerry drift,24,2,3,2.5,0.3984,ev_0022,block release until replay is understood
-jerry evidence recall,24,3,3,1.875,0.2865,ev_0000,block release until replay is understood
-problem policy boundary,24,2,3,1.708,0.2816,ev_0033,block release until replay is understood
-unsolved failure replay,24,2,4,3.333,0.5366,ev_0110,block release until replay is understood
+hardest boundary probe,36,3,4,2.528,0.3996,ev_0121,route to reviewer with evidence packet
+jerry evidence replay,36,4,5,2.611,0.4176,ev_0000,block release until cited evidence is regenerated
+problem operator packet,36,4,5,2.556,0.3824,ev_0055,accept only if decision claims cite fixture evidence
+unsolved regression harness,36,3,5,2.528,0.3949,ev_0022,open a regression issue with trace and benchmark delta

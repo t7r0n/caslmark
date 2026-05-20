@@ -13,6 +13,28 @@
     "unsolved_misroute",
     "problem_blindspot"
   ],
+  "domain_archetypes": [
+    {
+      "name": "jerry evidence replay",
+      "trigger": "jerry signal changes while hardest context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "hardest boundary probe",
+      "trigger": "hardest handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "unsolved regression harness",
+      "trigger": "unsolved behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "problem operator packet",
+      "trigger": "problem output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
   "minimum_cases": 144,
   "requires_evidence_markers": true
 }
