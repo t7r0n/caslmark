@@ -2,19 +2,39 @@
 
 A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Jerry already trusts - so every LLM tool call is pre checked, logged, and reversible.
 
-## Why This Exists
+![Caslmark working dashboard](outputs/project_working.svg)
 
-Jerry's hardest unsolved problem is agentic insurance servicing at scale across 50 states with 50 different regulators. The YC role description is explicit: they need "automation systems for insurance servicing tasks" and "backend pipelines that sync customer policy data." Their hiring page makes it clear they're stacking both an "AI/ML Serving Platform" team and an "Agentic AI" product organization.
+## Why it exists
 
-## What It Builds
+Jerry's hardest unsolved problem is agentic insurance servicing at scale across 50 states with 50 different regulators.
 
-- Replays synthetic `jerry` and `hardest` cases against the project's evidence rules.
-- Scores `jerry_coverage`, `hardest_risk`, and `unsolved_precision` so regressions are visible in CSV and JSON.
-- Plants `jerry drift` and `hardest gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `caslmark` without hosted services.
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-## Local Run
+## What is inside
+
+- A deterministic replay harness tuned around jerry, hardest, and unsolved.
+- Company-specific strategy code in `src/caslmark/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Caslmark evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `jerry coverage`
+- `hardest risk`
+- `unsolved precision`
+- `problem latency`
+
+## Failure modes it plants
+
+- jerry drift
+- hardest gap
+- unsolved misroute
+- problem blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -49,4 +67,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
