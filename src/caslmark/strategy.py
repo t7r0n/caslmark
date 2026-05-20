@@ -6,15 +6,15 @@ from pathlib import Path
 from typing import Any
 
 
-COMPANY = 'Jerry'
+COMPANY = 'Caslmark'
 REPO = 'caslmark'
-PROJECT_TERMS = ['jerry', 'hardest', 'unsolved', 'problem', 'agentic', 'insurance', 'servicing', 'scale']
-PROJECT_METRICS = ['jerry_coverage', 'hardest_risk', 'unsolved_precision', 'problem_latency']
-PROJECT_FAILURES = ['jerry_drift', 'hardest_gap', 'unsolved_misroute', 'problem_blindspot']
-PROJECT_ARCHETYPES = [{'name': 'jerry evidence replay', 'trigger': 'jerry signal changes while hardest context is stale', 'expected': 'block release until cited evidence is regenerated'}, {'name': 'hardest boundary probe', 'trigger': 'hardest handoff crosses a policy or trust boundary', 'expected': 'route to reviewer with evidence packet'}, {'name': 'unsolved regression harness', 'trigger': 'unsolved behavior regresses against the last accepted fixture', 'expected': 'open a regression issue with trace and benchmark delta'}, {'name': 'problem operator packet', 'trigger': 'problem output needs a human-readable audit packet', 'expected': 'accept only if decision claims cite fixture evidence'}]
-PROJECT_DIRECTION = 'A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Jerry already trusts — so every LLM tool call is pre checked, logged, and reversible.'
+PROJECT_TERMS = ['evidence', 'workflow', 'review', 'claims', 'fixtures', 'replay', 'handoff', 'trace', 'policy', 'decision', 'coverage', 'latency']
+PROJECT_METRICS = ['evidence_coverage', 'handoff_risk', 'claim_precision', 'review_latency']
+PROJECT_FAILURES = ['evidence_drift', 'handoff_gap', 'claim_misroute', 'review_blindspot']
+PROJECT_ARCHETYPES = [{'name': 'evidence replay', 'trigger': 'source evidence changes while workflow context is stale', 'expected': 'block release until cited evidence is regenerated'}, {'name': 'handoff boundary probe', 'trigger': 'handoff crosses a policy or trust boundary', 'expected': 'route to reviewer with evidence packet'}, {'name': 'claim regression harness', 'trigger': 'claim behavior regresses against the last accepted fixture', 'expected': 'open a regression issue with trace and benchmark delta'}, {'name': 'review operator packet', 'trigger': 'review output needs a human-readable audit packet', 'expected': 'accept only if decision claims cite fixture evidence'}]
+PROJECT_DIRECTION = 'A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Caslmark already trusts - so every LLM tool call is pre checked, logged, and reversible.'
 VISUAL_THEME = {'name': 'agent security', 'bg': '#f7f8fb', 'ink': '#111827', 'muted': '#475569', 'border': '#d8e1ec', 'a': '#2563eb', 'b': '#0891b2', 'c': '#7c3aed', 'd': '#dc2626', 'soft_a': '#eff6ff', 'soft_b': '#ecfeff', 'soft_c': '#f5f3ff', 'soft_d': '#fef2f2', 'hero': 'Adversarial Replay Board', 'left': 'runtime probes with evidence', 'right': 'release gates under attack', 'chain': 'attack-to-action chain', 'lane': 'probe', 'gate': 'guard failure', 'action': 'release action'}
-HERO_TITLE = 'Jerry Adversarial Replay Board'
+HERO_TITLE = 'Caslmark'
 
 
 def _short(value: str, limit: int = 44) -> str:
@@ -107,7 +107,7 @@ def build_signal_model(rows: list[dict[str, Any]], clusters: list[dict[str, Any]
         "review_share": round(review / total, 4),
         "top_leverage_points": leverage,
         "readout": (
-            f"{COMPANY} gets a local, deterministic pressure test around "
+            "This local harness runs a deterministic pressure test around "
             f"{PROJECT_TERMS[0]}, {PROJECT_TERMS[1]}, and {PROJECT_TERMS[2]}. "
             "The useful part is the repeatable evidence path from fixture "
             "to failure to operator action."

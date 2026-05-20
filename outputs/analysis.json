@@ -1,5 +1,5 @@
 {
-  "company": "Jerry",
+  "company": "Caslmark",
   "repo": "caslmark",
   "cases": 144,
   "status_counts": {
@@ -9,54 +9,54 @@
   },
   "clusters": [
     {
-      "scenario": "hardest boundary probe",
+      "scenario": "claim regression harness",
       "cases": 36,
       "blocks": 3,
-      "reviews": 4,
+      "reviews": 5,
       "mean_severity": 2.528,
-      "mean_score": 0.3996,
-      "top_evidence_id": "ev_0121",
-      "recommended_action": "route to reviewer with evidence packet"
+      "mean_score": 0.3931,
+      "top_evidence_id": "ev_0022",
+      "recommended_action": "open a regression issue with trace and benchmark delta"
     },
     {
-      "scenario": "jerry evidence replay",
+      "scenario": "evidence replay",
       "cases": 36,
       "blocks": 4,
       "reviews": 5,
       "mean_severity": 2.611,
-      "mean_score": 0.4176,
-      "top_evidence_id": "ev_0000",
+      "mean_score": 0.4104,
+      "top_evidence_id": "ev_0088",
       "recommended_action": "block release until cited evidence is regenerated"
     },
     {
-      "scenario": "problem operator packet",
+      "scenario": "handoff boundary probe",
+      "cases": 36,
+      "blocks": 3,
+      "reviews": 4,
+      "mean_severity": 2.528,
+      "mean_score": 0.4066,
+      "top_evidence_id": "ev_0121",
+      "recommended_action": "route to reviewer with evidence packet"
+    },
+    {
+      "scenario": "review operator packet",
       "cases": 36,
       "blocks": 4,
       "reviews": 5,
       "mean_severity": 2.556,
-      "mean_score": 0.3824,
+      "mean_score": 0.3951,
       "top_evidence_id": "ev_0055",
       "recommended_action": "accept only if decision claims cite fixture evidence"
-    },
-    {
-      "scenario": "unsolved regression harness",
-      "cases": 36,
-      "blocks": 3,
-      "reviews": 5,
-      "mean_severity": 2.528,
-      "mean_score": 0.3949,
-      "top_evidence_id": "ev_0022",
-      "recommended_action": "open a regression issue with trace and benchmark delta"
     }
   ],
   "highest_risk": {
-    "scenario": "jerry evidence replay",
+    "scenario": "evidence replay",
     "cases": 36,
     "blocks": 4,
     "reviews": 5,
     "mean_severity": 2.611,
-    "mean_score": 0.4176,
-    "top_evidence_id": "ev_0000",
+    "mean_score": 0.4104,
+    "top_evidence_id": "ev_0088",
     "recommended_action": "block release until cited evidence is regenerated"
   }
 }

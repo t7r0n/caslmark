@@ -1,77 +1,61 @@
 {
-  "company": "Jerry",
-  "company_slug": "jerry",
+  "company": "Caslmark",
+  "company_slug": "caslmark",
   "repo": "caslmark",
   "package": "caslmark",
   "cli": "caslmark",
   "title": "Caslmark",
-  "problem": "Jerry's hardest unsolved problem is agentic insurance servicing at scale across 50 states with 50 different regulators. The YC role description is explicit: they need \"automation systems for insurance servicing tasks\" and \"backend pipelines that sync customer policy data.\" Their hiring page makes it clear they're stacking both an \"AI/ML Serving Platform\" team and an \"Agentic AI\" product organization.",
-  "direction": "A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Jerry already trusts \u2014 so every LLM tool call is pre checked, logged, and reversible.",
-  "why": "Pinnacle judgment is choosing an integration surface (nest casl) the CTO already trusts, so the diff fits in the founder's head. Picking Datalog with proof trees over \"just regex the LLM output\" is the FAANG staff level call - and the one a compliance auditor will love.",
+  "problem": "Caslmark's hardest unsolved problem is agentic insurance servicing at scale across 50 states with 50 different regulators. The YC role description is explicit: they need \"automation systems for insurance servicing tasks\" and \"backend pipelines that sync customer policy data.\" Their hiring page makes it clear they're stacking both an \"AI/ML Serving Platform\" team and an \"Agentic AI\" product organization.",
+  "direction": "A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Caslmark already trusts - so every LLM tool call is pre checked, logged, and reversible.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "jerry",
-    "hardest",
-    "unsolved",
-    "problem",
-    "agentic",
-    "insurance",
-    "servicing",
-    "scale",
-    "across",
-    "states",
-    "different",
-    "regulators",
-    "description",
-    "explicit",
-    "automation",
-    "systems",
-    "tasks",
-    "backend"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "jerry_coverage",
-    "hardest_risk",
-    "unsolved_precision",
-    "problem_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "jerry_drift",
-    "hardest_gap",
-    "unsolved_misroute",
-    "problem_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "jerry evidence replay",
-      "trigger": "jerry signal changes while hardest context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "hardest boundary probe",
-      "trigger": "hardest handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "unsolved regression harness",
-      "trigger": "unsolved behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "problem operator packet",
-      "trigger": "problem output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://techstartups.com/2023/08/03/personal-insurance-shopper-startup-jerry-raises-110m-in-series-c2-funding-doubles-its-ai-powered-allcar-app-services/",
-    "https://www.prnewswire.com/news-releases/jerry-launches-revamped-website-to-help-drivers-make-smarter-insurance-and-auto-decisions-302452453.html",
-    "https://jerry.ai/job-openings/",
-    "https://www.ycombinator.com/companies/jerry-inc/jobs/QaoK3rw-software-engineer-core-automation-marketplace",
-    "https://github.com/getjerry",
-    "https://github.com/getjerry/nest-casl",
-    "https://github.com/musawirali",
-    "https://www.linkedin.com/in/musawirshah/",
-    "https://jerry.ai/team/"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/caslmark"
 }

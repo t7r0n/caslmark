@@ -1,7 +1,7 @@
 [project]
 name = "caslmark"
 version = "0.1.0"
-description = "A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL a"
+description = "A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts "
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [

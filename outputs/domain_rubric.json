@@ -1,67 +1,57 @@
 {
   "repo": "caslmark",
-  "company": "Jerry",
+  "company": "Caslmark",
   "rubric_axes": [
     {
-      "axis": "jerry_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "jerry_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "hardest_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "hardest_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "unsolved_precision",
+      "axis": "claim_precision",
       "failures": [
-        "unsolved_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "problem_latency",
+      "axis": "review_latency",
       "failures": [
-        "problem_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "jerry evidence replay",
-      "trigger": "jerry signal changes while hardest context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "hardest boundary probe",
-      "trigger": "hardest handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "unsolved regression harness",
-      "trigger": "unsolved behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "problem operator packet",
-      "trigger": "problem output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://techstartups.com/2023/08/03/personal-insurance-shopper-startup-jerry-raises-110m-in-series-c2-funding-doubles-its-ai-powered-allcar-app-services/",
-    "https://www.prnewswire.com/news-releases/jerry-launches-revamped-website-to-help-drivers-make-smarter-insurance-and-auto-decisions-302452453.html",
-    "https://jerry.ai/job-openings/",
-    "https://www.ycombinator.com/companies/jerry-inc/jobs/QaoK3rw-software-engineer-core-automation-marketplace",
-    "https://github.com/getjerry",
-    "https://github.com/getjerry/nest-casl",
-    "https://github.com/musawirali",
-    "https://www.linkedin.com/in/musawirshah/",
-    "https://jerry.ai/team/"
-  ]
+  "sources_used": []
 }

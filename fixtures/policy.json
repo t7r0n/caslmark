@@ -1,37 +1,37 @@
 {
-  "company": "Jerry",
+  "company": "Caslmark",
   "repo": "caslmark",
   "metrics": [
-    "jerry_coverage",
-    "hardest_risk",
-    "unsolved_precision",
-    "problem_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "jerry_drift",
-    "hardest_gap",
-    "unsolved_misroute",
-    "problem_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "domain_archetypes": [
     {
-      "name": "jerry evidence replay",
-      "trigger": "jerry signal changes while hardest context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "hardest boundary probe",
-      "trigger": "hardest handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "unsolved regression harness",
-      "trigger": "unsolved behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "problem operator packet",
-      "trigger": "problem output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
