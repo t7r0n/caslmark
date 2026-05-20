@@ -1,6 +1,6 @@
 # Operator Brief: Jerry
 
-Jerry gets a local, deterministic pressure test around jerry, hardest, and unsolved. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Jerry gets a local, deterministic pressure test around jerry, hardest, and unsolved. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
