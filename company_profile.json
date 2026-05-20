@@ -6,7 +6,7 @@
   "cli": "caslmark",
   "title": "Caslmark",
   "problem": "Jerry's hardest unsolved problem is agentic insurance servicing at scale across 50 states with 50 different regulators. The YC role description is explicit: they need \"automation systems for insurance servicing tasks\" and \"backend pipelines that sync customer policy data.\" Their hiring page makes it clear they're stacking both an \"AI/ML Serving Platform\" team and an \"Agentic AI\" product organization.",
-  "direction": "A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Jerry already trusts - so every LLM tool call is pre checked, logged, and reversible.",
+  "direction": "A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Jerry already trusts \u2014 so every LLM tool call is pre checked, logged, and reversible.",
   "why": "Pinnacle judgment is choosing an integration surface (nest casl) the CTO already trusts, so the diff fits in the founder's head. Picking Datalog with proof trees over \"just regex the LLM output\" is the FAANG staff level call - and the one a compliance auditor will love.",
   "terms": [
     "jerry",

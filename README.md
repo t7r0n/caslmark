@@ -1,22 +1,22 @@
 # Caslmark
 
-A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Jerry already trusts - so every LLM tool call is pre checked, logged, and reversible.
+A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Jerry already trusts — so every LLM tool call is pre checked, logged, and reversible.
 
 ![Caslmark working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Jerry's hardest unsolved problem is agentic insurance servicing at scale across 50 states with 50 different regulators.
+Jerry's hardest unsolved problem is agentic insurance servicing at scale across 50 states with 50 different regulators. The YC role description is explicit: they need "automation systems for insurance servicing tasks" and "backend pipelines that sync customer policy data." Their hiring page makes it clear they're stacking both an "AI/ML Serving Platform".
 
-Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
+The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
 ## What is inside
 
-- A deterministic replay harness tuned around jerry, hardest, and unsolved.
-- Company-specific strategy code in `src/caslmark/strategy.py`, not just README-level customization.
-- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
-- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
-- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+- Deterministic fixture generation for the company-specific risk surface.
+- Strategy code in `src/caslmark/strategy.py` with project-specific scoring and visual evidence.
+- Citation-locked reports where every decision claim points to a generated evidence ID.
+- Two regenerated visual artifacts: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, benchmark, and test artifacts.
 
 ![Caslmark evidence map](outputs/evidence_map.svg)
 

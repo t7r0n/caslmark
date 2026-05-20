@@ -1,6 +1,6 @@
 # Decision Report: Caslmark
 
-A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Jerry already trusts - so every LLM tool call is pre checked, logged, and reversible.
+A NestJS native, agent aware policy & guardrail layer that compiles state DOI insurance rules and carrier API contracts into the same CASL ability graph Jerry already trusts — so every LLM tool call is pre checked, logged, and reversible.
 
 ## Evidence-Grounded Findings
 
